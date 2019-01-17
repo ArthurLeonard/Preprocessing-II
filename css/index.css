@@ -120,3 +120,12 @@ header nav a {
   padding: 0 1rem;
   border: solid red;
 }
+button {
+  width: 80%;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  height: 40px;
+  background: #059191;
+  color: white;
+  border: 1px solid lightgray;
+}
