@@ -16,7 +16,12 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    margin: .5rem auto;
+  }
 }
 h2 {
   font-size: 3.2rem;
@@ -56,14 +61,36 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0 5%;
+    padding-left: 10%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0 5%;
+    padding-left: 10%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -75,10 +102,28 @@ img {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+  padding: 0 5%;
+  padding-left: 10%;
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding: 0 5%;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -91,34 +136,95 @@ img {
   padding-top: 30px;
   border-top: 2px dashed #c0c0c0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0 5%;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    width: 100%;
+    flex-direction: column;
+    object-fit: fill;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 50%;
-  border: solid black;
-  border-bottom: 4px dotted gray;
+  align-items: center;
+  max-width: 800px;
+  height: 80px;
+  margin: 0;
+  border-bottom: 2px dashed gray;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    height: 100px;
+    justify-content: stretch;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
 }
 header nav {
   display: flex;
   justify-content: space-between;
   width: 45%;
-  border: solid pink;
   padding: 0 1rem;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
 }
 header nav a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   margin: auto 0;
   padding: 0 1rem;
-  border: solid red;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.6rem;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+}
+.funbus {
+  height: 25rem;
+  padding: 0;
+  margin: 0px;
+}
+@media (max-width: 500px) {
+  .funbus {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+.top-content {
+  border-bottom: 4px dotted gray;
+  margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .top-content {
+    width: 100%;
+    padding: 0 5%;
+    padding-left: 10%;
+  }
 }
 button {
   width: 80%;
